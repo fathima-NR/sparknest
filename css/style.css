@@ -19,7 +19,7 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; zoom: 0.9; }
 body {
   font-family: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
   color: var(--text);
@@ -461,7 +461,7 @@ p { color: var(--muted); }
   .section { padding: 70px 0; }
   .menu-toggle { display: grid; place-items: center; }
   .nav-links {
-    position: fixed; top: 0; right: -100%; width: min(320px, 85%); height: 100vh; background: var(--white);
+    position: fixed; top: 0; bottom: 0; right: -100%; width: min(320px, 85%); background: var(--white);
     flex-direction: column; align-items: stretch; padding: 90px 24px 24px; gap: 6px;
     box-shadow: -10px 0 40px rgba(0,0,0,0.12); transition: right 0.35s ease; z-index: 1001; overflow-y: auto;
   }
